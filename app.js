@@ -11,7 +11,7 @@ function renderCafe(doc){
     li.setAttribute('data-id', doc.id);
     name.textContent = doc.data().name;
     whatsapp.textContent = doc.data().whatsapp;
-    whatsapp.textContent = doc.data().country;
+    country.textContent = doc.data().country;
 
     li.appendChild(name);
     li.appendChild(whatsapp);
