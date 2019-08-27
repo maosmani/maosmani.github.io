@@ -5,14 +5,17 @@ const form = document.querySelector('#add-cafe-form');
 function renderCafe(doc){
     let li = document.createElement('li');
     let name = document.createElement('span');
-    let city = document.createElement('span');
+    let whatsapp = document.createElement('span');
+    let country = document.createElement('span');
 
     li.setAttribute('data-id', doc.id);
     name.textContent = doc.data().name;
-    city.textContent = doc.data().city;
+    whatsapp.textContent = doc.data().whatsapp;
+    whatsapp.textContent = doc.data().country;
 
     li.appendChild(name);
-    li.appendChild(city);
+    li.appendChild(whatsapp);
+    li.appendChild(whatsapp);
 
     cafeList.appendChild(li);
 }
@@ -32,9 +35,12 @@ form.addEventListener('submit', (e) => {
    
     db.collection('cafes').add({
         name: form.name.value,
-        city: form.city.value
+        city: form.whatsapp.value,
+        city: form.whatsapp.country
+        
     });
 
     form.name.value = '';
-    form.city.value = '';
+    form.whatsapp.value = '';
+    form.country.value = '';
 });
