@@ -1,0 +1,49 @@
+<html>
+    <head>
+        
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+       
+        <h1>Cloud Cafe</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Cafe name">
+                <input type="text" name="city" placeholder="Cafe city">
+                <button>Add Cafe</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+
+        <script>
+
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAFgGEJR0o4VMZ_nGKPCa87a6kwi-BM7KA",
+    authDomain: "maosmani-daf01.firebaseapp.com",
+    databaseURL: "https://maosmani-daf01.firebaseio.com",
+    projectId: "maosmani-daf01",
+    storageBucket: "maosmani-daf01.appspot.com",
+    messagingSenderId: "979771734673",
+    appId: "1:979771734673:web:16116910310a4c22"
+  };
+  // Initialize Firebase
+ 
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+        
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
