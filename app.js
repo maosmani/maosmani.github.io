@@ -15,7 +15,7 @@ function renderCafe(doc){
 
     li.appendChild(name);
     li.appendChild(whatsapp);
-    li.appendChild(whatsapp);
+    li.appendChild(country);
 
     cafeList.appendChild(li);
 }
@@ -36,7 +36,7 @@ form.addEventListener('submit', (e) => {
     db.collection('cafes').add({
         name: form.name.value,
         city: form.whatsapp.value,
-        city: form.whatsapp.country
+        city: form.country.value
         
     });
 
