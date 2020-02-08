@@ -1,50 +1,42 @@
-<html>
-    <head>
-        
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-       
-        <h1>Cloud Cafe</h1>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <div class="content">
+    <title>mohamed osmani</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">maosmani</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+     
+    </ul>
+  </div>
+</nav>
+    <h1>Hello, world!</h1>
 
-            <form id="add-cafe-form">
-                <input type="text" name="name" placeholder="username">
-                <input type="text" name="whatsapp" placeholder="whatsapp number">
-                <input type="text" name="country" placeholder="country">
-                <button>Add User</button>
-            </form>
-
-            <ul id="cafe-list"></ul>
-
-        </div>
-
-
-        <script>
-
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyAFgGEJR0o4VMZ_nGKPCa87a6kwi-BM7KA",
-    authDomain: "maosmani-daf01.firebaseapp.com",
-    databaseURL: "https://maosmani-daf01.firebaseio.com",
-    projectId: "maosmani-daf01",
-    storageBucket: "maosmani-daf01.appspot.com",
-    messagingSenderId: "979771734673",
-    appId: "1:979771734673:web:16116910310a4c22"
-  };
-  // Initialize Firebase
- 
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-        
-            const db = firebase.firestore();
-            db.settings({ timestampsInSnapshots: true }); 
-        </script>
-        <script src="app.js"></script>
-    </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
